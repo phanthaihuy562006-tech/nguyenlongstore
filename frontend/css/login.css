@@ -1,8 +1,0 @@
-.login-page{padding:120px 20px 60px;display:flex;justify-content:center;align-items:center;min-height:80vh}
-.login-box{background:var(--smoke-surface);padding:35px 30px;border-radius:var(--radius);box-shadow:var(--shadow);width:100%;max-width:400px;border:1px solid var(--smoke-border)}
-.tabs{display:flex;margin-bottom:25px;border-radius:8px;overflow:hidden}
-.tab{flex:1;padding:12px;text-align:center;background:#2c2f33;border:none;cursor:pointer;font-weight:600;color:var(--smoke-text);transition:background var(--transition)}
-.tab.active{background:var(--smoke-accent);color:#fff}
-.auth-form{display:flex;flex-direction:column;gap:18px}
-.auth-form input{padding:12px;border:1px solid var(--smoke-border);background:#23252a;color:#e0e3e8;border-radius:8px}
-.message{color:var(--danger);text-align:center;margin-top:15px;font-size:0.95rem}
