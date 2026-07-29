@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danh mục</title>
+  <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+  <header class="header"><div class="header-left"><a href="home.html"><img src="public/images/logo.png" class="logo"></a></div><div class="header-right"><a href="home.html" class="icon-btn">🏠</a><a href="login.html" class="icon-btn">👤</a></div></header>
+  <main class="menu-page"><h1 class="section-title">Danh mục</h1><div class="category-list" id="categoryList"></div></main>
+  <script src="js/script.js"></script><script src="js/auth.js"></script>
+  <script>document.addEventListener('DOMContentLoaded',async()=>{const res=await fetch('/api/categories');const categories=await res.json();const list=document.getElementById('categoryList');categories.forEach(cat=>{const item=document.createElement('div');item.className='category-item';item.innerHTML=`<a href="danhmuc.html?category=${cat.slug}">${cat.name}</a>`;list.appendChild(item)})});</script>
+</body>
+</html>
