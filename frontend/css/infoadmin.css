@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background-color:#0d0d0f;color:#e0e3e8;min-height:100vh;display:flex;justify-content:center;align-items:center;padding:40px 20px}
+.info-container{width:100%;max-width:480px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:30px}
+.logo-circle{width:100px;height:100px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,0.15);box-shadow:0 0 20px rgba(255,255,255,0.08);animation:fadeInDown 0.8s ease-out,glowPulse 3s infinite alternate;transition:transform 0.4s ease}
+.logo-circle:hover{transform:rotate(10deg) scale(1.05)}
+@keyframes fadeInDown{from{opacity:0;transform:translateY(-30px)}to{opacity:1;transform:translateY(0)}}
+@keyframes glowPulse{0%{box-shadow:0 0 15px rgba(255,255,255,0.05)}100%{box-shadow:0 0 30px rgba(255,255,255,0.2)}}
+.main-title{font-size:2rem;font-weight:700;letter-spacing:2px;animation:fadeInUp 0.8s ease-out 0.2s both}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+.description{font-size:1rem;color:#b0b3b8;line-height:1.6;animation:fadeInUp 0.8s ease-out 0.4s both}
+.contact-card{display:flex;align-items:center;width:100%;background:#1a1b1e;border:1px solid #3a3d42;border-radius:16px;padding:18px 20px;text-decoration:none;color:inherit;box-shadow:0 8px 20px rgba(0,0,0,0.3);transition:all 0.3s ease;animation:fadeInUp 0.8s ease-out both}
+.contact-card:nth-child(4){animation-delay:0.5s}
+.contact-card:nth-child(5){animation-delay:0.65s}
+.contact-card:nth-child(6){animation-delay:0.8s}
+.contact-card:hover{transform:translateY(-5px);border-color:#5a5d63;box-shadow:0 15px 30px rgba(0,0,0,0.5),0 0 20px rgba(255,255,255,0.05)}
+.contact-card:active{transform:scale(0.98)}
+.card-icon{font-size:2.5rem;margin-right:20px;flex-shrink:0}
+.card-content{display:flex;flex-direction:column;align-items:flex-start;text-align:left}
+.card-title{font-weight:600;font-size:1.1rem;margin-bottom:4px}
+.card-sub{font-size:0.9rem;color:#a0a3a8}
+.social-buttons{display:flex;gap:20px;margin-top:10px;animation:fadeInUp 0.8s ease-out 1s both}
+.circle-btn{width:56px;height:56px;border-radius:50%;background:#1a1b1e;border:1px solid #3a3d42;display:flex;align-items:center;justify-content:center;font-size:1.6rem;text-decoration:none;color:#e0e3e8;position:relative;overflow:hidden;transition:transform 0.3s ease,box-shadow 0.3s ease;box-shadow:0 6px 16px rgba(0,0,0,0.3)}
+.circle-btn:hover{transform:scale(1.15);box-shadow:0 10px 25px rgba(0,0,0,0.5),0 0 15px rgba(255,255,255,0.1)}
+.ripple{position:absolute;border-radius:50%;background:rgba(255,255,255,0.2);transform:scale(0);animation:rippleEffect 0.6s ease-out;pointer-events:none}
+@keyframes rippleEffect{to{transform:scale(2.5);opacity:0}}
+@media(max-width:400px){.main-title{font-size:1.6rem}.contact-card{padding:14px 16px}.card-icon{font-size:2rem;margin-right:15px}.circle-btn{width:48px;height:48px;font-size:1.4rem}}
