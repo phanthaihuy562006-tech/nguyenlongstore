@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Cửa hàng Game - Hỗ trợ kéo tâm chất lượng cao</title>
+  <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-left"><a href="home.html" class="logo-link"><img src="public/images/logo.png" alt="Logo" class="logo"></a></div>
+    <div class="header-right">
+      <button class="icon-btn" id="searchToggle" aria-label="Tìm kiếm">🔍</button>
+      <div class="search-box" id="searchBox" style="display:none;"><input type="text" id="searchInput" placeholder="Tìm sản phẩm..."><button id="searchSubmit">Tìm</button></div>
+      <a href="login.html" class="icon-btn" aria-label="Tài khoản" id="userIcon">👤</a>
+      <button class="icon-btn" id="menuToggle" aria-label="Menu">☰</button>
+      <nav id="mainMenu" class="dropdown-menu">
+        <ul>
+          <li><a href="home.html">Trang chủ</a></li>
+          <li><a href="menu.html">Danh mục</a></li>
+          <li><a href="naptien.html">Nạp tiền</a></li>
+          <li><a href="danhmuc.html">Sản phẩm</a></li>
+          <li><a href="deposithistory.html">Lịch sử nạp</a></li>
+          <li><a href="productpurchasehistory.html">Lịch sử mua</a></li>
+          <li id="adminMenuLink" style="display:none;"><a href="admin.html">Quản trị</a></li>
+          <li><a href="#" id="logoutLink" style="display:none;">Đăng xuất</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero-banner">
+    <div class="hero-content">
+      <h1>HỖ TRỢ KÉO TÂM</h1>
+      <h2>CHẤT LƯỢNG CAO</h2>
+      <p>Giá tốt nhất chỉ từ 100K</p>
+      <p>Tất cả hỗ trợ đều Antiban.</p>
+      <div class="hero-buttons">
+        <a href="naptien.html?method=bank" class="btn btn-primary">Nạp chuyển khoản tự động</a>
+        <a href="naptien.html?method=card" class="btn btn-secondary">Nạp thẻ cào tự động</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="guarantees">
+    <div class="container">
+      <div class="guarantee-item"><span>✔</span> An toàn 100%</div>
+      <div class="guarantee-item"><span>✔</span> Kích hoạt tức thì</div>
+      <div class="guarantee-item"><span>✔</span> Hỗ trợ 24/7</div>
+    </div>
+  </section>
+
+  <section class="categories" id="categories">
+    <div class="container">
+      <h2 class="section-title">Danh mục Game</h2>
+      <div class="category-grid" id="categoryContainer"></div>
+    </div>
+  </section>
+
+  <section class="steps">
+    <div class="container">
+      <h2 class="section-title">Cách thức hoạt động</h2>
+      <div class="steps-row">
+        <div class="step-item">① Chọn game</div>
+        <div class="step-item">② Thanh toán</div>
+        <div class="step-item">③ Nhận key</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-box">Kích hoạt tức thì</div>
+        <div class="feature-box">Bảo hành trọn đời</div>
+        <div class="feature-box">Hỗ trợ 24/7</div>
+        <div class="feature-box">An toàn & Bảo mật</div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="public/images/logo.png" alt="Logo" class="footer-logo">
+          <p>Website cung cấp các công cụ hỗ trợ game chất lượng cao, uy tín hàng đầu.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Liên kết</h4>
+          <ul><li><a href="home.html">Trang chủ</a></li><li><a href="menu.html">Danh mục</a></li><li><a href="danhmuc.html">Sản phẩm</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Thể loại</h4>
+          <ul><li>Aimlock</li><li>DPI</li><li>Proxy</li><li>Android</li><li>IOS</li><li>Menu</li><li>Panel PC</li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Liên hệ</h4>
+          <p>Email: support@nguyenlong.store</p>
+          <p>Điện thoại: 0123 456 789</p>
+        </div>
+      </div>
+      <div class="payment-methods"><span>🏦</span> <span>💳</span> <span>📱</span></div>
+      <div class="copyright">© 2026 NguyenLong Store. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script><script src="js/auth.js"></script>
+  <script>document.addEventListener('DOMContentLoaded',()=>{loadCategories();checkAuthUI();});</script>
+</body>
+</html>
