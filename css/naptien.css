@@ -1,0 +1,64 @@
+/* naptien.css */
+.naptien-page {
+  padding: 110px 20px 60px;
+  text-align: center;
+}
+.naptien-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  margin-bottom: 30px;
+}
+.naptien-tabs .tab {
+  padding: 12px 28px;
+  background: #2c2f33;
+  border: 1px solid var(--smoke-border);
+  color: var(--smoke-text);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+.naptien-tabs .tab.active {
+  background: var(--smoke-accent);
+  color: #fff;
+  border-color: var(--smoke-accent);
+}
+.method-form {
+  background: var(--smoke-surface);
+  padding: 28px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: left;
+  border: 1px solid var(--smoke-border);
+}
+.bank-info {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #d0d3d8;
+}
+.qr-code {
+  max-width: 200px;
+  margin: 0 auto 18px;
+  border-radius: 12px;
+  border: 1px solid var(--smoke-border);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+input, select {
+  padding: 12px;
+  border: 1px solid var(--smoke-border);
+  background: #23252a;
+  border-radius: 8px;
+  color: #e0e3e8;
+}
+.message {
+  margin-top: 20px;
+  text-align: center;
+  color: var(--danger);
+  font-weight: 500;
+}
