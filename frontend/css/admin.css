@@ -1,0 +1,10 @@
+.admin-page{padding:110px 20px 60px}
+.admin-sections{display:grid;gap:45px}
+.admin-sections h2{color:#e0e3e8;margin-bottom:18px;font-size:1.5rem}
+form{display:flex;flex-direction:column;gap:14px;max-width:520px;background:var(--smoke-surface);padding:22px;border-radius:var(--radius);border:1px solid var(--smoke-border)}
+.admin-list{margin-top:20px}
+.admin-item{background:var(--smoke-surface);padding:14px 18px;margin:8px 0;border-radius:var(--radius);border:1px solid var(--smoke-border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+.user-actions{display:flex;gap:24px;flex-wrap:wrap;margin-top:10px}
+.action-box{background:var(--smoke-surface);border:1px solid var(--smoke-border);border-radius:var(--radius);padding:20px;flex:1 1 280px;box-shadow:var(--shadow)}
+.action-box h3{margin-bottom:15px;color:#e0e3e8}
+.msg{margin-top:10px;font-size:0.95rem;color:var(--danger)}
